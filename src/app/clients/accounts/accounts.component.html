@@ -1,0 +1,22 @@
+<div class="table-container">
+  <h2 style="background-color: white">ანგარიშები</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>მფლობელი</th>
+      <th>სახელი</th>
+      <th>თანხა</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let account of accounts; index as i;" >
+      <td>{{owner}}</td>
+        <td>{{account.name}}</td>
+        <td>{{account.balance}} GEL</td>
+      <td><button class="delete-btn">X</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <button class="add-btn" (click)="addAccount()">+</button>
+</div>

@@ -1,0 +1,75 @@
+/* my-form.component.css */
+.search-container {
+  display: flex;
+  /*gap: 10px;*/
+  flex-direction: column;
+  height: 200px;
+  /*justify-content: center; !* Horizontally center *!*/
+  padding: 20px;           /* Optional: Padding around the search div */
+  border: 1px solid #ddd; /* Add a border around the input group */
+  border-radius: 8px; /* Round the corners of the border */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);/* Space out the input items evenly */
+  margin-left: 10%;
+  width: 100%;
+}
+
+.search-client {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make sure the search div takes up full width if needed */
+  max-width: 1100px; /* Limit maximum width */
+}
+
+form {
+  width: 100%;
+  max-width: 900px; /* Limit the maximum width of the form */
+}
+
+.input-group {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd; /* Add a border around the input group */
+  border-radius: 8px; /* Round the corners of the border */
+  padding: 10px; /* Add padding inside the border */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);/* Space out the input items evenly */
+  width: 800px;
+}
+
+.input-item {
+  flex: 1; /* Allow items to grow and fill the available space */
+  margin: 0 10px; /* Space out the input items */
+}
+
+.input-item label {
+  display: block; /* Ensure label is displayed as a block element */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.input-item input {
+  width: 100%; /* Make input fields take up the full width of their container */
+  padding: 8px; /* Add some padding inside the input fields */
+  border: 1px solid #ccc; /* Add a border to the input fields */
+  border-radius: 4px; /* Round the corners of the input fields */
+}
+
+button {
+  display: block; /* Make the button a block element */
+  /*width: 100%; !* Make the button take up the full width of the form *!*/
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Add some space above the button */
+}
+
+button:hover {
+  background-color: steelblue;
+}

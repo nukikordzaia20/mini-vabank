@@ -1,0 +1,54 @@
+.table-container {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  /* todo add margins margin: 20px;*/
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h2 {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  /*color: black;*/
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}

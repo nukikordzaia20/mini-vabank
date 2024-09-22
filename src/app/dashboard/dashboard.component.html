@@ -1,0 +1,57 @@
+<div class="main-container">
+<div class="sidebar">
+  <div class="profile">
+    <div class="profile-background">
+      <img src="/assets/bog.jpeg" alt="Background Image" class="background-image">
+      <div class="profile-picture-container">
+        <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="Profile Picture" class="profile-picture">
+      </div>
+      <h3 class="username">{{ user?.name || 'User Name' }}</h3>
+      <p class="user-role">Tester</p>
+    </div>
+  </div>
+  <div class="home-link">
+    <a href="/dashboard">მთავარი</a>
+  </div>
+</div>
+
+  <div class="header-container">
+    <header class="header">
+      <img src="/assets/logo-rb.svg" alt="Bank of Georgia Logo" class="bank-logo">
+      <div class="header-right">
+        <div class="buttons-container">
+          <button class="header-button" (click)="logout()">Logout</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="content-container">
+    <p class="date">საოპერაციო თარიღი: {{getSystemTime()}}</p>
+
+    <div *ngIf="dashboardMode == 'add'">
+        <app-register-client (clientRegistered) = "handleClientRegistered($event)"/>
+    </div>
+
+    <div *ngIf="dashboardMode == 'detail'">
+
+      <div>
+        <app-client-details [client]="client" (onExitDetail)="detailExit()"/>
+      </div>
+
+    </div>
+
+    <div *ngIf="dashboardMode == 'search'">
+      <div>
+        <app-search (onClientSearch)="handleClientSearch($event)"></app-search>
+      </div>
+
+      <div *ngIf="showClientTable" style="margin-top: 10px">
+        <app-clients [clients]="clients" (onClientDetail)="openClientDetail($event)" (onClientAdd)="handleClientAdd()"></app-clients>
+      </div>
+    <div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,23 @@
+<div class="login-container">
+  <div class="photo-side">
+    <img>
+  </div>
+  <div class="form-side">
+    <div class="logo-container">
+      <img src="/assets/logo-rb.svg" alt="Logo" class="logo">
+    </div>
+
+    <div [formGroup]="registrationForm">
+      <input id="name" type="text" formControlName="name" required placeholder="სახელი">
+      <input type="text" id="username" formControlName="username" required placeholder="მომხმარებელი">
+      <input type="password" id="password" formControlName="password" required placeholder="პაროლი">
+      <input type="password" id="repeatPassword" formControlName="repeatPassword" required placeholder="გაიმეორეთ პაროლი">
+
+      <div class="button-container">
+<!--        <button type="button" (click)="register()" class="text-button">შესვლა</button>-->
+        <a routerLink="/login" class="text-button">შესვლა</a>
+        <button type="button" (click)="register()" class="text-button">რეგისტრაცია</button>
+      </div>
+    </div>
+  </div>
+</div>

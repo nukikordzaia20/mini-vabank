@@ -1,0 +1,19 @@
+<div class="login-container">
+  <div class="photo-side">
+    <img>
+  </div>
+  <div class="form-side">
+    <div class="logo-container">
+      <img src="/assets/logo-rb.svg" alt="Logo" class="logo">
+    </div>
+
+    <div [formGroup]="loginForm">
+      <input formControlName="username" type="text" id="username"  placeholder="მომხმარებელი">
+      <input formControlName="password" type="password" id="password" placeholder="პაროლი">
+      <div class="button-container">
+        <button type="button" class="text-button" (click)="login()">შესვლა</button>
+        <a routerLink="/register" class="text-button">რეგისტრაცია</a>
+      </div>
+    </div>
+  </div>
+</div>

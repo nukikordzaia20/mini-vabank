@@ -1,0 +1,14 @@
+<div class="login-container">
+  <div class="photo-side">
+    <img>
+  </div>
+  <div class="form-side">
+    <div [formGroup]="registrationForm">
+      <input id="name" type="text" formControlName="name" required placeholder="სახელი">
+      <input type="text" id="lastName" formControlName="lastName" required placeholder="გვარი">
+      <input type="text" id="plusScore" formControlName="plusScore" required placeholder="პლიუს ქულები">
+    </div>
+
+    <button (click)="registerClient()">რეგისტრაცია</button>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+.clients-container {
+  display: flex;
+  align-items: center;
+  gap: 80%;
+  /*align-content: center;!* Center items vertically *!*/
+  flex-direction: column;
+  /*height: 200px;*/
+  /*justify-content: center; !* Horizontally center *!*/
+  padding: 20px;           /* Optional: Padding around the search div */
+  border: 1px solid #ddd; /* Add a border around the input group */
+  border-radius: 8px; /* Round the corners of the border */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);/* Space out the input items evenly */
+  margin-left: 10%;
+  width: 100%;
+}
+
+.clients-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.client-list-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.clients-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px; /* Add some space between the label and button */
+}
+
+button {
+  display: block;
+  /*height: 10%;!* Make the button a block element *!*/
+  /*width: 100%; !* Make the button take up the full width of the form *!*/
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px; /* Add some space above the button */
+  margin-left: 720px; /* change this nuki */
+
+}
+
+.clients-list {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.clients-list td, .clients-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.clients-list tr:hover {
+  background-color: #ddd;
+}
+
+.clients-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: lightgrey;
+  color: black;
+}

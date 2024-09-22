@@ -1,0 +1,108 @@
+
+.client-account-details {
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Optional: add some space between items */
+}
+
+.client-account-details label {
+  margin-right: 5px; /* Optional: add spacing between the label and the paragraph */
+}
+
+.client-detail {
+  display: flex;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.image-section {
+  flex: 0 0 15%;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.details-section {
+  flex: 0 0 50%;
+  padding-left: 16px;
+}
+
+.client-id {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.price-section {
+  flex: 0 0 20%;
+  text-align: right;
+}
+
+.amount {
+  font-size: 15px;
+  color: green;
+}
+
+.plus {
+  font-size: 15px;
+  color: #555;
+}
+
+.exit-button {
+  /*margin-left: auto;*/
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.exit-button:hover {
+  background-color: #c0392b;
+}
+
+.bottom-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+}
+.bottom-tabs .tab {
+  padding: 10px 20px;
+  /* todo add border and center border-right: 1px solid #ccc; !* Add right border *!*/
+}
+
+.tab {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.tab:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}

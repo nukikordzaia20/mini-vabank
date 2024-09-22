@@ -1,0 +1,82 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+.photo-side {
+  flex: 1;
+  background: url('/assets/bog.jpeg') no-repeat center center;
+  background-size: cover;
+}
+
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 8px; /* Space between label and input field */
+  font-weight: bold; /* Bold labels */
+  color: #333333; /* Dark color for better readability */
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px; /* Space between input fields */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Increase font size for better readability */
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Focus State for Input Fields */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add a subtle shadow on focus */
+}
+
+
+/* General Button Styling */
+.text-button {
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+  color: darkorange; /* Text color */
+  font-size: 16px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0; /* Remove padding to match text size */
+  transition: color 0.3s; /* Smooth transition for color */
+  font-weight: bold; /* Make label text bold */
+}
+
+/* Button Container Styling */
+.button-container {
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: space-between; /* Space buttons apart */
+  margin-top: 20px; /* Space above the button container */
+}
+
+.form-side {
+  background-color: #d3d3d3;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  /* Remove center alignment vertically */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  width: 100%; /* Ensure form takes up full width of the container */
+  max-width: 400px; /* Optional: Set a max width for the form */
+  margin-top: 0; /* Ensure no extra margin at the top */
+}
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: space-between; /* Space buttons apart */
+  margin-top: 20px; /* Space above the button container */
+}

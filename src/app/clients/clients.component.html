@@ -1,0 +1,22 @@
+<div class="clients-container">
+  <div class="clients-header">
+    <label class="clients-name">კლიენტები</label>
+    <button (click) = "addClient()">დამატება</button>
+  </div>
+  <div class="client-list-container">
+<!--     //* todo add scroll nuki/-->
+    <table class="clients-list">
+      <tr>
+        <th>სახელი</th>
+        <th>გვარი</th>
+        <th>კლიენტის უნიკალური</th>
+      </tr>
+      <tr *ngFor="let client of clients; index as i;" (click)="goToClientDetail(client)">
+        <td>{{client.name}}</td>
+        <td>{{client.lastName}}</td>
+        <td>{{client.clientKey}}</td>
+      </tr>
+    </table>
+  </div>
+
+</div>

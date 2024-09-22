@@ -1,0 +1,21 @@
+<div class="search-container">
+  <label class="search-client">კლიენტის ძებნა</label>
+  <div class="search">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <div class="input-item">
+          <label for="name">სახელი</label>
+          <input id="name" formControlName="name">
+        </div>
+        <div class="input-item">
+          <label for="lastName">გვარი</label>
+          <input id="lastName" formControlName="lastName">
+        </div>
+        <div class="input-item">
+          <label for="clientKey">კლიენტის უნიკალური</label>
+          <input id="clientKey" formControlName="clientKey">
+        </div>
+      </div>
+      <button>ძებნა</button>
+    </form>
+  </div>
